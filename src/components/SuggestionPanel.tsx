@@ -14,12 +14,15 @@ registerCSS(css`
     z-index: 9999;
     pointer-events: none;
     white-space: pre-wrap;
-    border: 1px solid #ccc;
+    border: 1px solid #B2B2B2;
     display: flex;
     flex-direction: column;
-    padding: 0.5em;
+    padding: 8px;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+  .CodeMirror-line{
+    line-height: initial;
   }
 `);
 
@@ -129,7 +132,7 @@ const SuggestionPanel: FC<SuggestionPanelProps> = ({ text, textColor = "gray", x
           color: textColor,
           marginTop: "0.25em",
           marginLeft: "0.25em",
-          display: "flex",
+          display: "none",
           flexDirection: "row",
           alignItems: "center",
         }}>
